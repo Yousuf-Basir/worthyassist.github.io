@@ -1,0 +1,15 @@
+html{
+    height: 100%;
+}
+body{
+    padding: 15px;;
+    height: 100%;
+}
+.rs{
+    transition: all 0.5s ease;
+    margin-top: 55px;
+}
+#costResult{
+    font-weight: bold;
+    font-size: 50px;
+}

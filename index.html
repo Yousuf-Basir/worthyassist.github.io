@@ -8,6 +8,7 @@
     <link rel="manifest" href="./manifest.json">
     <title>Home page</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
     <link rel="stylesheet" href="./styles/beauty.css">
     <link rel="icon" href="./fav.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="./assets/logos/yapplogo152.png">
@@ -18,7 +19,29 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body>
-    <h1>This is a PWA 2</h1>
+    <h1>Worthy cost calculator</h1>
+    <ion-item>
+        <ion-label position="floating">Number of pages:</ion-label>
+        <ion-input id="pageCount"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Hard cover</ion-label>
+        <ion-checkbox (ion-change)="dodo()" slot="start" value="pepperoni" checked></ion-checkbox>
+    </ion-item>
+    <br><br>
+    <ion-button id="calculate" color="primary">Calculate</ion-button>
+    
+    
+        <p class="rs">
+            The book will cost:
+             <ion-text id="costResult" color="primary"></ion-text>
+           
+          </p>
+    
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
