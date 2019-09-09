@@ -1,6 +1,6 @@
 {
-    "name": "YAPP PWA template",
-    "short_name": "YAPP",
+    "name": "Worthy Assist",
+    "short_name": "Worthy Assist",
     "icons": [{
       "src": "./assets/logos/logo128.png",
         "sizes": "128x128",
