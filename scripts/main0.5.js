@@ -1,9 +1,9 @@
 window.onload = () => {
     'use strict';
-    document.getElementById("updatemsg").innerHTML = "15";
+    document.getElementById("updatemsg").innerHTML = "16";
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./sw.js');
+               .register('./sw0.1.js');
     }
 
 
