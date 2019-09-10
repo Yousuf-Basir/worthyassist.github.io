@@ -13,9 +13,3 @@ body{
     font-weight: bold;
     font-size: 50px;
 }
-#refresh{
-    display: none;
-}
-.show{
-    display: block !important;
-}

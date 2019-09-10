@@ -2,8 +2,8 @@ var cacheName = 'yapp-pwa';
 var filesToCache = [
   "./index.html",
   "./assets/cached.html",
-  "./scripts/main.js",
-  "./styles/beauty.css"
+  "./styles/beauty.css",
+  "./scripts/main.js"
 ];
 
 /* Start the service worker and cache all of the app's content */
@@ -22,13 +22,4 @@ self.addEventListener('fetch', function(e) {
       return response || fetch(e.request);
     })
   );
-});
-
-self.addEventListener('message', function(event){
-  console.log("message received");
-  if(event.data.action === 'skipWaiting'){
-
-    self.skipWaiting();
-    
-  }
 });
