@@ -1,10 +1,6 @@
-self.addEventListener('fetch', function(event) {
-  event.respondWith(fetch(event.request));
-});
-
 window.onload = () => {
     'use strict';
-    console.log("update9");
+    console.log("update10");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js');
