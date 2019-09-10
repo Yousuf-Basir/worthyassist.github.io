@@ -1,8 +1,10 @@
-window.onload = () => {
-  var updater = document.getElementById("updater");
-    'use strict';
+self.addEventListener('fetch', function(event) {
+  event.respondWith(fetch(event.request));
+});
 
-    console.log("update7");
+window.onload = () => {
+    'use strict';
+    console.log("update8");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js');

@@ -24,6 +24,8 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
+
+
 // interface CacheStorage {
 //   delete(cacheName: string): Promise<boolean>;
 //   has(cacheName: string): Promise<boolean>;
