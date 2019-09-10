@@ -2,7 +2,7 @@ window.onload = () => {
   var updater = document.getElementById("updater");
     'use strict';
 
-    console.log("update4");
+    console.log("update5");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js').then(function(registration){
@@ -25,15 +25,14 @@ window.onload = () => {
   var clearCache = document.getElementById("cacheCleaner");
 
   
-  // clearCache.addEventListener("click", function(){
-  //   console.log("cleaning");
-  //   caches.delete("yapp-pwa").then(function(){
-  //     alert("cached cleaned");
-  //   }).catch(function(){
-  //     console.log("error");
-  //   })
-  //   console.log("cleaned");
-  // });
+  clearCache.addEventListener("click", function(){
+    caches.delete("yapp-pwa").then(function(){
+      alert("cached cleaned");
+    }).catch(function(){
+      console.log("error");
+    })
+    localStorage.clear();
+  });
 
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
