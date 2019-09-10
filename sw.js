@@ -21,3 +21,12 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+
+self.addEventListener('message', function(event){
+  console.log("message received");
+  if(event.data.action === 'skipWaiting'){
+
+    self.skipWaiting();
+    
+  }
+});
