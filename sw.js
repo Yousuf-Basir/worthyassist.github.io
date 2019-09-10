@@ -1,7 +1,9 @@
 var cacheName = 'yapp-pwa';
 var filesToCache = [
   "./index.html",
-  "./assets/cached.html"
+  "./assets/cached.html",
+  "./scripts/main.js",
+  "./styles/beauty.css"
 ];
 
 /* Start the service worker and cache all of the app's content */
