@@ -1,9 +1,18 @@
 window.onload = () => {
+  var updater = document.getElementById("updater");
     'use strict';
-    console.log("update2");
+    
+    console.log("update3");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./sw.js');
+               .register('./sw.js').then(function(registration){
+                console.log('Registration succeeded.');
+                updater.addEventListener('click', function(){
+                  registration.update();
+                });
+               });
+      console.log(navigator.oscpu());
+      
     }
 
 
