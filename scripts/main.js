@@ -1,8 +1,8 @@
 window.onload = () => {
   var updater = document.getElementById("updater");
     'use strict';
-    
-    console.log("update3");
+
+    console.log("update4");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js').then(function(registration){
@@ -11,7 +11,7 @@ window.onload = () => {
                   registration.update();
                 });
                });
-      console.log(navigator.oscpu());
+      console.log(navigator.oscpu);
       
     }
 
