@@ -2,17 +2,10 @@ window.onload = () => {
   var updater = document.getElementById("updater");
     'use strict';
 
-    console.log("update6");
+    console.log("update7");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./sw.js').then(function(registration){
-                console.log('Registration succeeded.');
-                updater.addEventListener('click', function(){
-                  registration.update();
-                });
-               });
-      console.log(navigator.oscpu);
-      
+               .register('./sw.js');
     }
 
 
@@ -26,11 +19,6 @@ window.onload = () => {
 
   
   clearCache.addEventListener("click", function(){
-    caches.delete("yapp-pwa").then(function(){
-      alert("cached cleaned");
-    }).catch(function(){
-      console.log("error");
-    })
     localStorage.clear();
     location.reload();
   });
