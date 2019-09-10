@@ -2,7 +2,7 @@ window.onload = () => {
   var updater = document.getElementById("updater");
     'use strict';
 
-    console.log("update5");
+    console.log("update6");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js').then(function(registration){
@@ -32,6 +32,7 @@ window.onload = () => {
       console.log("error");
     })
     localStorage.clear();
+    location.reload();
   });
 
   checkbox.addEventListener( 'click', function() {
