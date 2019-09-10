@@ -29,6 +29,7 @@ window.onload = () => {
       });
 
       navigator.serviceWorker.addEventListener('controllerchange',function(){
+        console.log("refressing");
         if(refreshing) return;
         window.location.reload();
         refreshing = true;
