@@ -1,6 +1,6 @@
 window.onload = () => {
     'use strict';
-    console.log("update10");
+    document.getElementById("updatemsg").innerHTML = "11";
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js');
