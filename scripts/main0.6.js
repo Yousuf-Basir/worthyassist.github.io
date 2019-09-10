@@ -1,13 +1,9 @@
 window.onload = () => {
     'use strict';
-    document.getElementById("updatemsg").innerHTML = "17";
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw0.2.js');
     }
-
-
-
   }
   var checkbox = document.querySelector("ion-checkbox");
   var calButton =  document.getElementById("calculate");
