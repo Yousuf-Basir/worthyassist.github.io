@@ -16,11 +16,6 @@ window.onload = () => {
   var clearCache = document.getElementById("cacheCleaner");
 
   
-  clearCache.addEventListener("click", function(){
-    localStorage.clear();
-    location.reload();
-  });
-
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
           // Checkbox is checked..
