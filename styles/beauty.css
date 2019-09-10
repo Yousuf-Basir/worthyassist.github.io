@@ -16,3 +16,6 @@ body{
 #refresh{
     display: none;
 }
+.show{
+    display: block !important;
+}

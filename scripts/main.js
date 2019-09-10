@@ -20,7 +20,7 @@ window.onload = () => {
               if(navigator.serviceWorker.controller){
                 console.log("new available");
                 let notification = document.getElementById(refresh);
-                //notification.style.display = "block";
+                notification.className = 'show';
               }
               break;
           }
