@@ -1,6 +1,6 @@
 window.onload = () => {
     'use strict';
-  
+    console.log("update");
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./sw.js');
@@ -15,7 +15,7 @@ window.onload = () => {
   var costResult =  document.getElementById("costResult");
   var clearCache = document.getElementById("cacheCleaner");
 
-  console.log("update");
+  
   clearCache.addEventListener("click", function(){
     console.log("cleaning");
     caches.delete("yapp-pwa");
