@@ -15,7 +15,9 @@ window.onload = () => {
   var costResult =  document.getElementById("costResult");
   var clearCache = document.getElementById("cacheCleaner");
 
-  
+  clearCache.addEventListener('click',function(){
+    location.reload();
+  });
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
           // Checkbox is checked..
