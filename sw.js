@@ -23,3 +23,11 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+
+// interface CacheStorage {
+//   delete(cacheName: string): Promise<boolean>;
+//   has(cacheName: string): Promise<boolean>;
+//   keys(): Promise<string[]>;
+//   match(request: RequestInfo, options?: CacheQueryOptions): Promise<Response | undefined>;
+//   open(cacheName: string): Promise<Cache>;
+// }

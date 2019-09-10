@@ -13,6 +13,12 @@ window.onload = () => {
   var calButton =  document.getElementById("calculate");
   var countInput =  document.getElementById("pageCount");
   var costResult =  document.getElementById("costResult");
+  var clearCache = document.getElementById("cacheCleaner");
+
+  clearCache.addEventListener("click", function(){
+    caches.delete("yapp-pwa");
+    console.log("cleaned");
+  });
 
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
