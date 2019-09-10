@@ -16,15 +16,15 @@ window.onload = () => {
   var clearCache = document.getElementById("cacheCleaner");
 
   
-  clearCache.addEventListener("click", function(){
-    console.log("cleaning");
-    caches.delete("yapp-pwa").then(function(){
-      alert("cached cleaned");
-    }).catch(function(){
-      console.log("error");
-    })
-    console.log("cleaned");
-  });
+  // clearCache.addEventListener("click", function(){
+  //   console.log("cleaning");
+  //   caches.delete("yapp-pwa").then(function(){
+  //     alert("cached cleaned");
+  //   }).catch(function(){
+  //     console.log("error");
+  //   })
+  //   console.log("cleaned");
+  // });
 
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
