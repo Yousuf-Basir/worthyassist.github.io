@@ -16,6 +16,7 @@ window.onload = () => {
   var clearCache = document.getElementById("cacheCleaner");
 
   clearCache.addEventListener("click", function(){
+    console.log("cleaning");
     caches.delete("yapp-pwa");
     console.log("cleaned");
   });
