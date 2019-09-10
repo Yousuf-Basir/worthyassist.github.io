@@ -15,6 +15,7 @@ window.onload = () => {
   var costResult =  document.getElementById("costResult");
   var clearCache = document.getElementById("cacheCleaner");
 
+  console.log("update");
   clearCache.addEventListener("click", function(){
     console.log("cleaning");
     caches.delete("yapp-pwa");
