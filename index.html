@@ -26,7 +26,7 @@
     </ion-item>
     <ion-item>
         <ion-label>Hard cover</ion-label>
-        <ion-checkbox (ion-change)="dodo()" slot="start" value="pepperoni" checked></ion-checkbox>
+        <ion-checkbox (ion-change)="dodo()" slot="start" value="pepperoni"></ion-checkbox>
     </ion-item>
     <br><br>
     <ion-button id="calculate" color="primary">Calculate</ion-button>
@@ -44,13 +44,5 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
     <script src="./scripts/main0.6.js"></script>
-    <script>
-        var ifConnected = window.navigator.onLine;
-        if (ifConnected) {
-            //http://gourabxz.github.io/worthyassist.github.io/assets/cached.html
-        } else {
-            window.location = "http://gourabxz.github.io/worthyassist.github.io/assets/cached.html";
-        }
-            </script>
 </body>
 </html>

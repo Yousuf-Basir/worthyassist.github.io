@@ -8,5 +8,16 @@
 </head>
 <body>
     <p>I have been cached by the PWA settings at sw.js</p>
+
+<script>
+    var ifConnected = window.navigator.onLine;
+    if (ifConnected) {
+        //http://gourabxz.github.io/worthyassist.github.io/assets/cached.html
+        console.log("app has connection");
+    } else {
+        console.log("not connected");
+        window.location = "../index.html";
+    }
+</script>
 </body>
 </html>
