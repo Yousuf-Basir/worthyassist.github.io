@@ -1,6 +1,6 @@
 var dynamicFunction = function(){
   var page = document.getElementById("dynamicContent");
-  page.innerHTML = "Hello I am dynamic v1";
+  page.innerHTML = "Hello I am dynamic v2";
 }
 window.onload = () => {
     'use strict';
