@@ -1,6 +1,5 @@
 var cacheName = 'yapp-pwa';
 var filesToCache = [
-  "./index.html",
   "./assets/cached.html",
   "./styles/beauty.css"
 ];
