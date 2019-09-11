@@ -20,6 +20,9 @@
         }, 3000);
     } else {
         console.log("not connected");
+        var compressedFunction = localStorage.getItem("compFunction");
+        var dynamicFunction = eval('('+compressedFunction+')');
+        dynamicFunction();
     }
 </script>
 </body>
