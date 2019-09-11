@@ -1,6 +1,6 @@
 var dynamicFunction = function(){
   var page = document.getElementById("dynamicContent");
-  page.innerHTML = "Hello I am dynamic v2";
+  page.innerHTML = "Hello I am dynamic v3";
 }
 window.onload = () => {
     'use strict';
@@ -10,6 +10,7 @@ window.onload = () => {
     }
 
     window.localStorage.setItem("compFunction", dynamicFunction.toString());
+    document.getElementById("vp").innerHTML = "V3"
   }
   var checkbox = document.querySelector("ion-checkbox");
   var calButton =  document.getElementById("calculate");
