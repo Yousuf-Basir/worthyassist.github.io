@@ -16,3 +16,35 @@ body{
 #vp, #vAdd{
     display: none !important;
 }
+
+
+
+#calculate {
+    position: relative;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+#calculate:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.445);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+#calculate:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
