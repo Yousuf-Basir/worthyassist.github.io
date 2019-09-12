@@ -36,6 +36,7 @@ window.onload = () => {
   var countInput =  document.getElementById("pageCount");
   var costResult =  document.getElementById("costResult");
 
+
   checkbox.addEventListener( 'click', function() {
       if(!this.checked) {
           // Checkbox is checked..
