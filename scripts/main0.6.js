@@ -8,14 +8,14 @@ window.onload = () => {
     var dynamicFunction = function(){
       var page = document.getElementById("dynamicContent");
       var currentVersion = window.localStorage.getItem("versionCount");
-      page.innerHTML = "Hi I am dynamic v" + currentVersion;
+      page.innerHTML = "♥️ Hi I am dynamic v" + currentVersion;
     }
     window.localStorage.setItem("compFunction", dynamicFunction.toString());
     
     if(window.localStorage.getItem("versionCount") === null){
       document.getElementById("vp").innerHTML = "V0";
     }else{
-      document.getElementById("vp").innerHTML = "V" + window.localStorage.getItem("versionCount");
+      document.getElementById("vp").innerHTML = "Version:" + window.localStorage.getItem("versionCount");
     }
 
     var vadd = document.getElementById("vAdd");
